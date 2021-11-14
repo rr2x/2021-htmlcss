@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline & Block Styling</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    li {
+      display: inline; /* to allow all items horizontally to let an item not occupy 1 line */
+      /* inline does not allow widths and margins */
+    }
+    li a {
+      padding-right: 20px;
+    }
+    img {
+      display: block; /* block level to allow margin */
+      margin: auto;
+    }
+    .box {
+      background: #f4f4f4;
+      display: inline-block; /* goes horizontal and allows use of widths */
+      padding: 20px;
+      margin-bottom: 15px;
+      max-width: 33%;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">Technology</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Fashion</a></li>
+  </ul>
+  <br/>
+  <br/>
+  <img src="img/leaf.png" alt="my image">
+  <img src="img/leaf.png" alt="my image">
+  <br/>
+  <br/>
+  <div class="box">
+    <h3>Heading 1</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quaerat delectus ipsum eius, consequuntur voluptates quisquam accusantium aut? Explicabo exercitationem at rem temporibus tempora veniam totam fugit. Voluptate, incidunt. Commodi repudiandae similique corrupti, voluptatibus sit cumque corporis, et odio fuga quisquam reiciendis! Repellat perspiciatis reprehenderit dolorum odio tenetur, voluptates quas.</p>
+  </div>
+  <div class="box">
+    <h3>Heading 2</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quaerat delectus ipsum eius, consequuntur voluptates quisquam accusantium aut? Explicabo exercitationem at rem temporibus tempora veniam totam fugit. Voluptate, incidunt. Commodi repudiandae similique corrupti, voluptatibus sit cumque corporis, et odio fuga quisquam reiciendis! Repellat perspiciatis reprehenderit dolorum odio tenetur, voluptates quas.</p>
+  </div>
+  <div class="box">
+    <h3>Heading 3</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quaerat delectus ipsum eius, consequuntur voluptates quisquam accusantium aut? Explicabo exercitationem at rem temporibus tempora veniam totam fugit. Voluptate, incidunt. Commodi repudiandae similique corrupti, voluptatibus sit cumque corporis, et odio fuga quisquam reiciendis! Repellat perspiciatis reprehenderit dolorum odio tenetur, voluptates quas.</p>
+  </div>
+</body>
+</html>
