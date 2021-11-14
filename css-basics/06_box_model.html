@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model / Margin & Padding</title>
+  <style>
+    /* css reset */
+    * { /* select all elements and apply this style */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; /* prevent adding width and padding */
+    }
+
+    /* styles below will overwrite previous rules after the css reset */
+
+    .box {
+      background: #f4f4f4;
+      border: 2px #777 solid;
+      width: 500px;
+
+      /* padding on all sides */
+      padding: 120px;
+
+      /* padding per side, overwrite the previous style */
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+
+      /* shortcut, top->right->bottom->left */
+      padding: 10px 20px 10px 20px;
+
+      /* shortcut if top+bottom and left+right the same */
+      padding: 10px 20px;
+
+      /* note: same shortcuts from padding also works for margin */
+
+      /* margin on all sides */
+      margin: 20px;
+
+      margin-top: 10px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+
+      margin: 10px 20px 10px 20px;
+
+      margin: 10px 20px;
+
+    }
+
+    .box h3 {
+      padding-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h3>Box One</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Enim placeat ut repellat hic laborum ipsum blanditiis ab
+      alias inventore odio!</p>
+  </div>
+  <div class="box">
+    <h3>Box One</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Enim placeat ut repellat hic laborum ipsum blanditiis ab
+      alias inventore odio!</p>
+  </div>
+</body>
+</html>
