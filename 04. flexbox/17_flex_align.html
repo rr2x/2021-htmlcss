@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Align</title>
+  <style>
+    #container {
+      background: #555;
+      height: 600px;
+      display: flex;
+      flex-wrap: wrap;
+
+      /* -- for x-axis alignment (horizontal alignment) -- */
+      /* justify-content:
+            flex-start = align to the left
+            flex-end = align to the right
+            center = align to center
+            space-around = use remaining spaces to align around flex items, like an extra margin
+            space-between = use remaining spaces to align between flex items
+            space-evenly = even on both sides
+      */
+
+      justify-content: space-evenly;
+
+      /* -- for y-axis alignment (vertical alignment AND flex container must have a height) -- */
+      /* align-items:
+            baseline = default (topmost, y-axis: 0)
+            flex-start = just like baseline
+            flex-end = bottom
+            center
+            stretch = lets items stretch out vertically
+
+      */
+
+      align-items: flex-start;
+
+      /* for alignment items vertically involving extra free space,
+         not all the time we can fill the space
+         inside a flex there will be extra space */
+
+      /* align-content:
+            flex-start: remaining space is at bottom
+            flex-end: remaining sspace is at top
+            center
+            space-around: remaining space is around
+            space-between: remaining space is at center
+
+      */
+      align-content: space-between;
+
+    }
+    .item-1 {
+      order: 2; /* change ordering of flex items */
+    }
+    .item-2 {
+      /* align single item vertical */
+      /* align-self */
+      /*
+        flex-start
+        flex-end
+        center
+        baseline
+        stretch
+      */
+    }
+    .item {
+      background: #f4f4f4;
+      border: #ccc solid 1px;
+      text-align: center;
+      padding: 1rem;
+      margin: 0.5rem;
+      flex-basis: 200px; /* same thing with width: 300px; */
+    }
+  </style>
+</head>
+<body>
+  <!-- Emmet shortcut: -->
+  <!-- #container>.item.item-${<h3>Item $</h3>}*12 -->
+
+  <div id="container">
+    <div class="item item-1">
+      <h3>Item 1</h3>
+    </div>
+    <div class="item item-2">
+      <h3>Item 2</h3>
+    </div>
+    <div class="item item-3">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item item-4">
+      <h3>Item 4</h3>
+    </div>
+    <div class="item item-5">
+      <h3>Item 5</h3>
+    </div>
+    <div class="item item-6">
+      <h3>Item 6</h3>
+    </div>
+    <div class="item item-7">
+      <h3>Item 7</h3>
+    </div>
+    <div class="item item-8">
+      <h3>Item 8</h3>
+    </div>
+    <div class="item item-9">
+      <h3>Item 9</h3>
+    </div>
+    <div class="item item-10">
+      <h3>Item 10</h3>
+    </div>
+    <div class="item item-11">
+      <h3>Item 11</h3>
+    </div>
+    <div class="item item-12">
+      <h3>Item 12</h3>
+    </div>
+  </div>
+
+</body>
+</html>
