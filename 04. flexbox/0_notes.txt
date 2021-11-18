@@ -1,0 +1,9 @@
+display: flex;
+    - will create that element as a flex container
+    - makes all child elements as flex items
+    - auto align children horizontally by default
+
+properties that align:
+  justify-content = align horizontally
+  align-items: align vertically
+  align-content: align when extra space in cross axis
