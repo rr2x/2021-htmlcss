@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyframes</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    *:focus {
+      outline: none;
+    }
+
+    body {
+      background: #333;
+    }
+
+    .box {
+      background: white;
+      width: 200px;
+      height: 200px;
+      position: relative; /* can also animate position */
+      animation-name: animate1; /* keyframe name */
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards; /* stay where fill is at */
+      animation-delay: 1s; /* wait 2seconds */
+      /* animation-direction: alternate-reverse; */
+      animation-timing-function: ease-in-out;  /* timing function */
+
+      /* keyframe name | duration | fill-mode | delay | timing function */
+      /* -- shortcut -- */
+      /* animation: animate1 2s forwards 1s ease-in-out */
+    }
+
+    @keyframes animate1 {
+      from {
+        top: 0; /* start element position */
+      }
+      to {
+        width: 600px;
+        background-color: red; /* slowly turns to red */
+        top: 300px; /* element destination position */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+
+  </div>
+</body>
+</html>
