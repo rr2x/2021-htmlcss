@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Before & After</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    *:focus {
+      outline: none;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #333;
+      color: #fff
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+    }
+
+    header:before {
+      content: ''; /* need to be added even if empty */
+      background: url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center/cover;
+      opacity: 0.6;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    header > h1 {
+      font-size: 4rem;
+      margin: 1rem;
+    }
+
+    /* after the element that use the class
+       does not exist in the markup,
+       inserted through css
+    */
+    /* same logic with :before, but insert before the class */
+    .is-required:after {
+      content: '*';
+      color: red;
+      padding-left: 2px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <!-- <label class="is-required" for="name">Name</label>
+  <input type="text"> -->
+
+  <header>
+    <h1>Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, aperiam.</p>
+  </header>
+
+  <section>
+    <h3>Lorem, ipsum dolor.</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci ipsum sequi ratione quidem! Aliquam nam possimus alias ad repellat. Voluptatum, quis. Consectetur similique architecto a saepe sapiente facere ex pariatur.</p>
+  </section>
+
+</body>
+</html>

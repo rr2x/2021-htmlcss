@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shadows</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    *:focus {
+      outline: none;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      padding: 1rem;
+      margin: 1rem;
+      background: coral;
+      color: #fff;
+    }
+
+    .container .box:first-child {
+      /* offset-x | offset-y | color */
+      box-shadow: 10px 10px teal;
+    }
+
+    .container .box:nth-child(2) {
+      /* offset-x | offset-y | blur-radius | color */
+      box-shadow: 10px 10px 20px teal;
+    }
+
+    .container .box:nth-child(3) {
+      /* negative values */
+      box-shadow: -5px -5px 20px teal;
+    }
+
+    .container .box:nth-child(4) {
+      /* offset-x | offset-y | blur-radius | spread-radius | color */
+      box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.6);
+    }
+
+    .container .box:nth-child(4) {
+      /* inset | offset-x | offset-y | color */
+      box-shadow: inset -3px 3px teal;
+    }
+
+    .container .box:last-child {
+      /* multiple shadows */
+      box-shadow: 3px 3px teal, -3px -3px olive;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eveniet aliquid sunt, perspiciatis tempora reiciendis quasi amet doloremque unde quae.</p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eveniet aliquid sunt, perspiciatis tempora reiciendis quasi amet doloremque unde quae.</p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eveniet aliquid sunt, perspiciatis tempora reiciendis quasi amet doloremque unde quae.</p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eveniet aliquid sunt, perspiciatis tempora reiciendis quasi amet doloremque unde quae.</p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eveniet aliquid sunt, perspiciatis tempora reiciendis quasi amet doloremque unde quae.</p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eveniet aliquid sunt, perspiciatis tempora reiciendis quasi amet doloremque unde quae.</p>
+    </div>
+  </div>
+</body>
+</html>
