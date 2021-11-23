@@ -1,0 +1,8 @@
+
+css grid
+  - grid layout system
+  - two dimensional layouts
+      - flexbox is good for navigation (only for simple alignment)
+      - css-grid is good for layout of entire page (2 dimensional layout)
+  - same alignment attributes from flex
+  - all child elements are grid items (same with flex, will be flex items)
